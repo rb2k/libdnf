@@ -29,7 +29,7 @@ class Context;
 class Command {
 public:
     virtual void set_argument_parser(Context &) {}
-    virtual dnfdaemon::KeyValueMap session_config(Context &) {
+    virtual dnfdaemon::KeyValueMap session_config() {
         dnfdaemon::KeyValueMap cfg = {};
         return cfg;
     }
